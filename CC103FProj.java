@@ -14,15 +14,8 @@ public class CC103FProj {
             do{
                 do{
                 System.out.print("Initial Amount of Tuition       : ");
-                while (!scan.hasNextDouble()) { // Validate if the input is a number
-                System.out.println("------------------------------------------------------");
-                System.out.println("Invalid Input. Please enter a valid number.");
-                System.out.println("------------------------------------------------------");
-                System.out.print("Initial Amount of Tuition       : ");
-                scan.next(); // Consume the invalid input
-             }
-            initialTuition = scan.nextDouble();
-            scan.nextLine(); // Consume the newline character
+                initialTuition = scan.nextDouble();
+                scan.nextLine(); // Consume the newline character
                 if (initialTuition <= 0) {
                 System.out.println("-------------------------------------------------------");
                 System.out.println("Invalid Input. Tuition fee must be greater than zero.");
