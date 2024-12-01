@@ -42,6 +42,9 @@ public class CC103FProj {
             do {
             System.out.print("Do you wish to continue? (Type Y or N): ");
                 continueChoice = scan.nextLine().toUpperCase().charAt(0);
+            if (continueChoice == 'Y') {
+                System.out.println("\n-------------------------------------------\n");
+            }
             if (continueChoice == 'N') {
                 System.out.println("\n-------------------------------------------\n\nThank you for using our Tuition Fee Assessment!\n");
                 break;
